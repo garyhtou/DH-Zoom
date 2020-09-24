@@ -25,6 +25,8 @@ class App extends React.Component {
 		};
 	}
 
+	// epoch time
+	// dateOnly will not show the hours/minutes
 	dates = [
 		{
 			task: "WAMAP - 9.1 Polar Coordinates",
@@ -317,6 +319,9 @@ class App extends React.Component {
 											<p style={{ fontWeight: "600" }}>Join Zoom</p>
 										</div>
 									</a>
+									<p style={{ textAlign: "right", width: "100%" }}>
+										Zoom links updated daily
+									</p>
 								</div>
 							</div>
 						</div>
