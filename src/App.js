@@ -25,6 +25,19 @@ class App extends React.Component {
 		};
 	}
 
+	dates = [
+		{
+			task: "WAMAP - 9.1 Polar Coordinates",
+			date: 1600909200,
+			dateOnly: false,
+		},
+		{
+			task: "Quarter Begins",
+			date: 1600937284,
+			dateOnly: true,
+		},
+	];
+
 	randomEmojisList = [
 		"👋",
 		"😆",
@@ -82,9 +95,11 @@ class App extends React.Component {
 						},
 					});
 				} else {
-					notification.info({
+					notification.open({
+						type: "warning",
 						message:
-							"Whoops! We forgot to add the zoom links for today... rip :(",
+							"Whoops! I forgot to update the zoom links for today... rip :(",
+						duration: 0,
 					});
 				}
 			})
@@ -126,16 +141,24 @@ class App extends React.Component {
 									{this.state.randomEmoji}
 								</span>
 							</h1>
-							<p>Dale Hoffman, Fall 2020</p>
+							<h3>Dale Hoffman, Fall 2020</h3>
 							<div className="user-flex">
 								<div className="user-flexSide user-flexLeft">
 									<div className="user-leftSection ">
 										<div className="user-leftSection-titleContainer">
-											<h2 className="user-leftSection-title">
-												WAMAP Due Dates
-											</h2>
+											<h2 className="user-leftSection-title">Updates</h2>
 										</div>
-										<p>9.1 - Yesterday</p>
+										<p>
+											Join{" "}
+											<a
+												href="https://teams.microsoft.com/l/team/19%3a38107697e64a4db19413516d66555784%40thread.tacv2/conversations?groupId=eafa15db-2c87-4434-add2-0b3702f4f5d3&tenantId=f94c251c-1347-422e-b3ea-8ac56befd6cb "
+												target="_blank"
+											>
+												Microsoft Teams
+											</a>{" "}
+											if you haven't already. This is where all the class
+											recordings are located.
+										</p>
 									</div>
 									<div className="user-leftSection ">
 										<div className="user-leftSection-titleContainer">
@@ -143,7 +166,89 @@ class App extends React.Component {
 												Important Dates
 											</h2>
 										</div>
-										<p>First day - Sept 21st</p>
+										{function () {
+											const columns = [
+												{
+													title: "Task",
+													dataIndex: "task",
+													key: "task",
+												},
+												{
+													title: "Date",
+													dataIndex: "date",
+													key: "date",
+												},
+											];
+
+											const data = [];
+											for (let item of this.dates) {
+												var itemDate = moment(item.date, "X");
+												data.push({
+													task: item.task,
+													date: item.dateOnly
+														? itemDate.format("MMMM Do")
+														: itemDate.format("MMM DD[,] h:mm a") +
+														  " (" +
+														  itemDate.fromNow() +
+														  ")",
+												});
+											}
+
+											return (
+												<Table
+													columns={columns}
+													dataSource={data}
+													pagination={{
+														pageSize: 10,
+														hideOnSinglePage: true,
+													}}
+													scroll={{ x: 575 }}
+												/>
+											);
+										}.bind(this)()}
+									</div>
+									<div className="user-leftSection ">
+										<div className="user-leftSection-titleContainer">
+											<h2 className="user-leftSection-title">Quick Links</h2>
+										</div>
+										<p>
+											<a
+												href="http://scidiv.bellevuecollege.edu/dh/Calculus_all/Calculus_all.html"
+												target="_blank"
+											>
+												Contemporary Calculus (Textbook)
+											</a>
+										</p>
+										<p>
+											<a
+												href="https://bc.instructure.com/courses/1950323"
+												target="_blank"
+											>
+												Canvas
+											</a>
+										</p>
+										<p>
+											{" "}
+											<a
+												href="http://scidiv.bellevuecollege.edu/dh/math153/math153.html"
+												target="_blank"
+											>
+												Dale Hoffman's Website
+											</a>
+										</p>
+										<p>
+											<a href="https://discord.gg/Kg9sjtA" target="_blank">
+												Join Discord Server (Organized by <em>Ki#6883</em>)
+											</a>
+										</p>
+										<p>
+											<a
+												href="https://teams.microsoft.com/l/team/19%3a38107697e64a4db19413516d66555784%40thread.tacv2/conversations?groupId=eafa15db-2c87-4434-add2-0b3702f4f5d3&tenantId=f94c251c-1347-422e-b3ea-8ac56befd6cb "
+												target="_blank"
+											>
+												Join Microsoft Teams (Class Recordings)
+											</a>
+										</p>
 									</div>
 								</div>
 
@@ -159,6 +264,7 @@ class App extends React.Component {
 										style={{
 											background:
 												"linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%)",
+											color: "black",
 										}}
 									>
 										<div>
@@ -173,13 +279,14 @@ class App extends React.Component {
 										href={this.state.links.sectionB}
 										onClick={() => {
 											firebase.analytics().logEvent("join_button", {
-												section: "A",
+												section: "B",
 											});
 										}}
 										className="user-classItem"
 										style={{
 											background:
 												"linear-gradient(90deg, #efd5ff 0%, #515ada 100%)",
+											color: "black",
 										}}
 									>
 										<div>
@@ -193,13 +300,14 @@ class App extends React.Component {
 										href={this.state.links.officeHours}
 										onClick={() => {
 											firebase.analytics().logEvent("join_button", {
-												section: "A",
+												section: "OfficeHours",
 											});
 										}}
 										className="user-classItem"
 										style={{
 											background:
 												"linear-gradient(90deg, #d53369 0%, #daae51 100%)",
+											color: "black",
 										}}
 									>
 										<div>

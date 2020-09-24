@@ -16,7 +16,7 @@
 
 .user-welcome {
 	font-size: 4em;
-	margin-right: 10vh;
+	margin-bottom: 0;
 }
 
 .user-flex {
@@ -106,6 +106,6 @@ code {
 
 @media only screen and (max-width: 920px) {
 	.user-flex {
-		flex-wrap: wrap;
+		flex-wrap: wrap-reverse;
 	}
 }

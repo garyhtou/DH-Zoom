@@ -1,6 +1,14 @@
 # DH Zoom
 
-Dashboard for every changing zoom links
+A Dashboard for ever changing zoom links.
+
+Made for Bellevue College, Dale Hoffman, Math 153, Fall 2020
+
+## Built With
+
+`React` `Firebase` `Ant Design` `moment`
+
+### Firebase Realtime Database Rules
 
 ```JSON
 {
