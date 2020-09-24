@@ -29,6 +29,16 @@ class App extends React.Component {
 	// dateOnly will not show the hours/minutes
 	dates = [
 		{
+			task: "Quiz #1 - 9.1-9.2",
+			date: 1601427600,
+			dateOnly: true,
+		},
+		{
+			task: "WAMAP - 9.2 Calculus with Polar Coordinates",
+			date: 1601168400,
+			dateOnly: false,
+		},
+		{
 			task: "WAMAP - 9.1 Polar Coordinates",
 			date: 1600909200,
 			dateOnly: false,
@@ -150,6 +160,7 @@ class App extends React.Component {
 										<div className="user-leftSection-titleContainer">
 											<h2 className="user-leftSection-title">Updates</h2>
 										</div>
+										<p>No class on Monday, Sept 28th!</p>
 										<p>
 											Join{" "}
 											<a
@@ -185,10 +196,24 @@ class App extends React.Component {
 											const data = [];
 											for (let item of this.dates) {
 												var itemDate = moment(item.date, "X");
+												const inDays = Math.abs(
+													Math.round(
+														moment
+															.duration(moment().startOf("day") - itemDate)
+															.asDays()
+													)
+												);
 												data.push({
 													task: item.task,
 													date: item.dateOnly
-														? itemDate.format("MMMM Do")
+														? itemDate.format("MMMM Do") +
+														  " (" +
+														  (inDays === 0
+																? "today"
+																: itemDate.isBefore(moment())
+																? inDays + " days ago"
+																: "in " + inDays + " days") +
+														  ")"
 														: itemDate.format("MMM DD[,] h:mm a") +
 														  " (" +
 														  itemDate.fromNow() +
@@ -326,13 +351,13 @@ class App extends React.Component {
 							</div>
 						</div>
 					) : (
-						<p>Admin?!</p>
+						<p>Admin?! or 404</p>
 					)}
 				</Content>
 				<Footer style={{ textAlign: "center" }}>
 					<p style={{ marginBottom: "2px" }}>
 						<em>
-							There may be bugs, I'm not responsible if you're late to class :)
+							There may be bugs. I'm not responsible if you're late to class :)
 						</em>
 					</p>
 					<div>
