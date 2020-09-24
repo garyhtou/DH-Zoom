@@ -330,25 +330,32 @@ class App extends React.Component {
 					)}
 				</Content>
 				<Footer style={{ textAlign: "center" }}>
-					<a
-						className="gh-link"
-						href="https://github.com/garytou2/DH-Zoom"
-						onClick={function () {
-							firebase.analytics().logEvent("visit_github_repo");
-						}}
-					>
-						DH Zoom <GithubOutlined />
-					</a>
-					<span className="credit-sep">|</span>
-					Developed by{" "}
-					<a
-						href="https://garytou.com"
-						onClick={function () {
-							firebase.analytics().logEvent("visit_garytou_com");
-						}}
-					>
-						Gary Tou
-					</a>
+					<p style={{ marginBottom: "2px" }}>
+						<em>
+							There may be bugs, I'm not responsible if you're late to class :)
+						</em>
+					</p>
+					<div>
+						<a
+							className="gh-link"
+							href="https://github.com/garytou2/DH-Zoom"
+							onClick={function () {
+								firebase.analytics().logEvent("visit_github_repo");
+							}}
+						>
+							DH Zoom <GithubOutlined />
+						</a>
+						<span className="credit-sep">|</span>
+						Developed by{" "}
+						<a
+							href="https://garytou.com"
+							onClick={function () {
+								firebase.analytics().logEvent("visit_garytou_com");
+							}}
+						>
+							Gary Tou
+						</a>
+					</div>
 				</Footer>
 			</Layout>
 		);
