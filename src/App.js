@@ -35,7 +35,7 @@ class App extends React.Component {
 		},
 		{
 			task: "Quarter Begins",
-			date: 1600937284,
+			date: 1600736400,
 			dateOnly: true,
 		},
 	];
