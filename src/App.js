@@ -29,7 +29,15 @@ class App extends React.Component {
 	// dateOnly will not show the hours/minutes
 	dates = [
 		{
-			task: "Quiz #1 - 9.1-9.2",
+			task: (
+				<p>
+					Quiz #1 - 9.1-9.2 (
+					<a href="http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html">
+						Practice Quizzes
+					</a>
+					)
+				</p>
+			),
 			date: 1601427600,
 			dateOnly: true,
 		},
