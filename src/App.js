@@ -168,7 +168,10 @@ class App extends React.Component {
 										<div className="user-leftSection-titleContainer">
 											<h2 className="user-leftSection-title">Updates</h2>
 										</div>
-										<p>No class on Monday, Sept 28th!</p>
+										<p>
+											No class on Monday, Sept 28th! Office hour at noon in prep
+											of quiz 1
+										</p>
 										<p>
 											Join{" "}
 											<a
@@ -207,7 +210,11 @@ class App extends React.Component {
 												const inDays = Math.abs(
 													Math.round(
 														moment
-															.duration(moment().startOf("day") - itemDate)
+															.duration(
+																moment()
+																	.tz("America/Los_Angeles")
+																	.startOf("day") - itemDate
+															)
 															.asDays()
 													)
 												);
@@ -218,7 +225,9 @@ class App extends React.Component {
 														  " (" +
 														  (inDays === 0
 																? "today"
-																: itemDate.isBefore(moment())
+																: itemDate.isBefore(
+																		moment().tz("America/Los_Angeles")
+																  )
 																? inDays + " days ago"
 																: "in " + inDays + " days") +
 														  ")"
