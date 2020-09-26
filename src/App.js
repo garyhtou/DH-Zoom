@@ -22,6 +22,7 @@ class App extends React.Component {
 				officeHours: "#",
 			},
 			randomEmoji: this.randomEmoji(),
+			loading: true,
 		};
 	}
 
@@ -109,16 +110,34 @@ class App extends React.Component {
 					console.log(snapshot.val());
 					this.setState({
 						links: {
-							sectionA: snapshot.val().sectionA,
-							sectionB: snapshot.val().sectionB,
-							officeHours: snapshot.val().officeHours,
+							sectionA:
+								typeof snapshot.val().sectionA !== "undefined"
+									? snapshot.val().sectionA
+									: "#",
+							sectionB:
+								typeof snapshot.val().sectionB !== "undefined"
+									? snapshot.val().sectionB
+									: "#",
+							officeHours:
+								typeof snapshot.val().officeHours !== "undefined"
+									? snapshot.val().officeHours
+									: "#",
 						},
+						loading: false,
 					});
 				} else {
+					this.setState({
+						links: {
+							sectionA: "#",
+							sectionB: "#",
+							officeHours: "#",
+						},
+						loading: false,
+					});
 					notification.open({
 						type: "warning",
 						message:
-							"Whoops! I forgot to update the zoom links for today... rip :(",
+							"Whoops! There's no class today or I forgot to update the zoom links!",
 						duration: 0,
 					});
 				}
@@ -207,17 +226,14 @@ class App extends React.Component {
 											const data = [];
 											for (let item of this.dates) {
 												var itemDate = moment(item.date, "X");
-												const inDays = Math.abs(
-													Math.round(
-														moment
-															.duration(
-																moment()
-																	.tz("America/Los_Angeles")
-																	.startOf("day") - itemDate
-															)
-															.asDays()
-													)
+												const inDays = Math.round(
+													moment
+														.duration(
+															itemDate - moment().tz("America/Los_Angeles")
+														)
+														.asDays()
 												);
+
 												data.push({
 													task: item.task,
 													date: item.dateOnly
@@ -225,10 +241,8 @@ class App extends React.Component {
 														  " (" +
 														  (inDays === 0
 																? "today"
-																: itemDate.isBefore(
-																		moment().tz("America/Los_Angeles")
-																  )
-																? inDays + " days ago"
+																: inDays < 0
+																? Math.abs(inDays) + " days ago"
 																: "in " + inDays + " days") +
 														  ")"
 														: itemDate.format("MMM DD[,] h:mm a") +
@@ -297,70 +311,114 @@ class App extends React.Component {
 								</div>
 
 								<div className="user-flexSide user-flexRight">
-									<a
-										href={this.state.links.sectionA}
-										onClick={() => {
-											firebase.analytics().logEvent("join_button", {
-												section: "A",
-											});
-										}}
-										className="user-classItem"
-										style={{
-											background:
-												"linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%)",
-											color: "black",
-										}}
+									<Tooltip
+										title="No link"
+										trigger={
+											this.state.links.sectionA === "#" && !this.state.loading
+												? "hover"
+												: ""
+										}
 									>
-										<div>
-											<h3>
-												<strong>7:30 (Section A)</strong>
-											</h3>
-											<p style={{ fontWeight: "600" }}>Join Zoom</p>
-										</div>
-									</a>
+										<a
+											href={this.state.links.sectionA}
+											onClick={() => {
+												firebase.analytics().logEvent("join_button", {
+													section: "A",
+												});
+											}}
+											className="user-classItem"
+											style={{
+												background:
+													"linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%)",
+												color: "black",
+												filter:
+													this.state.links.sectionA === "#" &&
+													!this.state.loading
+														? "grayscale(1)"
+														: null,
+											}}
+										>
+											<div>
+												<h3>
+													<strong>7:30 (Section A)</strong>
+												</h3>
+												<p style={{ fontWeight: "600" }}>Join Zoom</p>
+											</div>
+										</a>
+									</Tooltip>
 
-									<a
-										href={this.state.links.sectionB}
-										onClick={() => {
-											firebase.analytics().logEvent("join_button", {
-												section: "B",
-											});
-										}}
-										className="user-classItem"
-										style={{
-											background:
-												"linear-gradient(90deg, #efd5ff 0%, #515ada 100%)",
-											color: "black",
-										}}
+									<Tooltip
+										title="No link"
+										trigger={
+											this.state.links.sectionB === "#" && !this.state.loading
+												? "hover"
+												: ""
+										}
 									>
-										<div>
-											<h3>
-												<strong>9:30 (Section B)</strong>
-											</h3>
-											<p style={{ fontWeight: "600" }}>Join Zoom</p>
-										</div>
-									</a>
-									<a
-										href={this.state.links.officeHours}
-										onClick={() => {
-											firebase.analytics().logEvent("join_button", {
-												section: "OfficeHours",
-											});
-										}}
-										className="user-classItem"
-										style={{
-											background:
-												"linear-gradient(90deg, #d53369 0%, #daae51 100%)",
-											color: "black",
-										}}
+										<a
+											href={this.state.links.sectionB}
+											onClick={() => {
+												firebase.analytics().logEvent("join_button", {
+													section: "B",
+												});
+											}}
+											className="user-classItem"
+											style={{
+												background:
+													"linear-gradient(90deg, #efd5ff 0%, #515ada 100%)",
+												color: "black",
+												filter:
+													this.state.links.sectionB === "#" &&
+													!this.state.loading
+														? "grayscale(1)"
+														: null,
+											}}
+										>
+											<div>
+												<h3>
+													<strong>9:30 (Section B)</strong>
+												</h3>
+												<p style={{ fontWeight: "600" }}>Join Zoom</p>
+											</div>
+										</a>
+									</Tooltip>
+
+									<Tooltip
+										title="No link"
+										trigger={
+											this.state.links.officeHours === "#" &&
+											!this.state.loading
+												? "hover"
+												: ""
+										}
 									>
-										<div>
-											<h3>
-												<strong>8:30 (Office Hours)</strong>
-											</h3>
-											<p style={{ fontWeight: "600" }}>Join Zoom</p>
-										</div>
-									</a>
+										<a
+											href={this.state.links.officeHours}
+											onClick={() => {
+												firebase.analytics().logEvent("join_button", {
+													section: "OfficeHours",
+												});
+											}}
+											className="user-classItem"
+											style={{
+												background:
+													"linear-gradient(90deg, #d53369 0%, #daae51 100%)",
+												color: "black",
+												filter:
+													this.state.links.officeHours === "#" &&
+													!this.state.loading
+														? "grayscale(1)"
+														: null,
+											}}
+										>
+											<div>
+												<h3>
+													<strong>8:30 (Office Hours)</strong>
+												</h3>
+												<p style={{ fontWeight: "600" }}>Join Zoom</p>
+											</div>
+										</a>
+									</Tooltip>
 									<p style={{ textAlign: "right", width: "100%" }}>
 										Zoom links updated daily
 									</p>
