@@ -413,7 +413,7 @@ class App extends React.Component {
 										>
 											<div>
 												<h3>
-													<strong>8:30 (Office Hours)</strong>
+													<strong>12:00 (Office Hours)</strong>
 												</h3>
 												<p style={{ fontWeight: "600" }}>Join Zoom</p>
 											</div>
