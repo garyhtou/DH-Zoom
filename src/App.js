@@ -188,10 +188,6 @@ class App extends React.Component {
 											<h2 className="user-leftSection-title">Updates</h2>
 										</div>
 										<p>
-											No class on Monday, Sept 28th! Office hour at noon in prep
-											of quiz 1
-										</p>
-										<p>
 											Join{" "}
 											<a
 												href="https://teams.microsoft.com/l/team/19%3a38107697e64a4db19413516d66555784%40thread.tacv2/conversations?groupId=eafa15db-2c87-4434-add2-0b3702f4f5d3&tenantId=f94c251c-1347-422e-b3ea-8ac56befd6cb "
