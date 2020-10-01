@@ -3,10 +3,9 @@ import "./App.css";
 
 import firebase from "./firebase";
 import moment from "moment-timezone";
-import { Helmet } from "react-helmet";
 
-import { Layout, Button, notification, Table, Tooltip } from "antd";
-import { GithubOutlined, BookOutlined } from "@ant-design/icons";
+import { Layout, notification, Table, Tooltip } from "antd";
+import { GithubOutlined } from "@ant-design/icons";
 
 const { Content, Footer } = Layout;
 
@@ -105,14 +104,18 @@ class App extends React.Component {
 
 	getZoomLinks() {
 		const today = moment().tz("America/Los_Angeles").format("YYYYMMDD");
-		console.log(today);
+		console.log("Today:", today);
+		console.log(
+			"Tomorrow:",
+			moment().tz("America/Los_Angeles").add(1, "days").format("YYYYMMDD")
+		);
 
 		firebase
 			.database()
 			.ref("links/" + today)
 			.once("value", (snapshot) => {
 				if (snapshot.exists()) {
-					console.log(snapshot.val());
+					console.log("Today's Zoom Links:", snapshot.val());
 					this.setState({
 						links: {
 							sectionA:
@@ -250,6 +253,7 @@ class App extends React.Component {
 														  " (" +
 														  itemDate.fromNow() +
 														  ")",
+													rawDate: item.date,
 												});
 											}
 
@@ -262,6 +266,9 @@ class App extends React.Component {
 														hideOnSinglePage: true,
 													}}
 													scroll={{ x: 575 }}
+													rowKey={(record) =>
+														record.rawDate + "|" + JSON.stringify(record.task)
+													}
 												/>
 											);
 										}.bind(this)()}
