@@ -29,6 +29,16 @@ class App extends React.Component {
 	// dateOnly will not show the hours/minutes
 	dates = [
 		{
+			task: "Quiz #2 - 9.3-9.4",
+			date: 1601994600,
+			dateOnly: true,
+		},
+		{
+			task: "WAMAP - 9.4 Calculus and Parametric Equations",
+			date: 1601870400,
+			dateOnly: false,
+		},
+		{
 			task: "WAMAP - 9.3 Parametric Equations",
 			date: 1601611200,
 			dateOnly: false,
@@ -196,15 +206,11 @@ class App extends React.Component {
 											<h2 className="user-leftSection-title">Updates</h2>
 										</div>
 										<p>
-											Join{" "}
-											<a
-												href="https://teams.microsoft.com/l/team/19%3a38107697e64a4db19413516d66555784%40thread.tacv2/conversations?groupId=eafa15db-2c87-4434-add2-0b3702f4f5d3&tenantId=f94c251c-1347-422e-b3ea-8ac56befd6cb "
-												target="_blank"
-											>
-												Microsoft Teams
-											</a>{" "}
-											if you haven't already. This is where all the class
-											recordings are located.
+											Quiz #2 will most likely be 35 minutes long instead of 40.
+										</p>
+										<p>
+											Monday's content (Oct 5th) will not be on Tuesday's quiz
+											(quiz #2).{" "}
 										</p>
 									</div>
 									<div className="user-leftSection ">
