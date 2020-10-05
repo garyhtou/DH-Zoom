@@ -214,7 +214,7 @@ class App extends React.Component {
                       <h2 className='user-leftSection-title'>Updates</h2>
                     </div>
                     <p>
-                      Quiz #2 will most likely be 40 minutes and will be a total
+                      Quiz #2 will be 40 minutes and a total
                       of 20 points.
                     </p>
                     <p>
