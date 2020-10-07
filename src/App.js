@@ -29,15 +29,20 @@ class App extends React.Component {
   // dateOnly will not show the hours/minutes
   dates = [
     {
+      task: 'WAMAP - 9.6 Properties of Conic Sections',
+      date: 1602388800,
+      dateOnly: false,
+    },
+    {
       task: (
         <p>
           Quiz #2 - 9.3-9.4 (
           <a href='http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html'>
             Practice Quizzes
           </a>
-		  )
+          )
         </p>
-	  ),
+      ),
       date: 1601994600,
       dateOnly: true,
     },
@@ -213,17 +218,10 @@ class App extends React.Component {
                     <div className='user-leftSection-titleContainer'>
                       <h2 className='user-leftSection-title'>Updates</h2>
                     </div>
-                    <p>
-                      Quiz #2 will be 40 minutes and a total
-                      of 20 points.
-                    </p>
-                    <p>
-                      Monday's content (Oct 5th) will not be on Tuesday's quiz
-                      (quiz #2).
-                    </p>
-                    <p>
-                      No class or office hours on Tuesday except for the quiz.
-                    </p>
+                    <p>There is no 9.5 WAMAP assignment</p>
+                    <p>Watch the first 9.5 video</p>
+                    <p>Read chapter 9.5 casually</p>
+                    <p>Omit pages 7,8,9 from chapter 9.6</p>
                   </div>
                   <div className='user-leftSection '>
                     <div className='user-leftSection-titleContainer'>
