@@ -28,7 +28,12 @@ class App extends React.Component {
   // epoch time
   // dateOnly will not show the hours/minutes
   dates = [
-    {
+	{
+		task: "WAMAP - 9.6 Properties of Conic Sections" ,
+		date: 1602388800,
+		dateOnly: false,
+	},
+	{
       task: (
         <p>
           Quiz #2 - 9.3-9.4 (
@@ -48,7 +53,7 @@ class App extends React.Component {
     },
     {
       task: 'WAMAP - 9.3 Parametric Equations',
-      date: 1601611200,
+	  date: 1601611200,
       dateOnly: false,
     },
     {
@@ -214,15 +219,10 @@ class App extends React.Component {
                       <h2 className='user-leftSection-title'>Updates</h2>
                     </div>
                     <p>
-                      Quiz #2 will be 40 minutes and a total
-                      of 20 points.
+                     There is no 9.5 WAMAP assignment
                     </p>
                     <p>
-                      Monday's content (Oct 5th) will not be on Tuesday's quiz
-                      (quiz #2).
-                    </p>
-                    <p>
-                      No class or office hours on Tuesday except for the quiz.
+                      9.6 WAMAP is due Saturday at 9PM
                     </p>
                   </div>
                   <div className='user-leftSection '>
