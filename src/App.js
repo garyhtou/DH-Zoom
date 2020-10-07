@@ -29,6 +29,19 @@ class App extends React.Component {
   // dateOnly will not show the hours/minutes
   dates = [
     {
+      task: (
+        <p>
+          Test #1 - 9.1,9.2,9.3,9.4,9.5,9.6 (
+          <a href='http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html'>
+            Practice Tests
+          </a>
+		  )
+        </p>
+	  ),
+	  date: 1602627311,
+	  dateOnly: true
+    },
+    {
       task: 'WAMAP - 9.6 Properties of Conic Sections',
       date: 1602388800,
       dateOnly: false,
