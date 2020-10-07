@@ -221,6 +221,7 @@ class App extends React.Component {
                     <p>There is no 9.5 WAMAP assignment</p>
                     <p>Watch the first 9.5 video</p>
                     <p>Read chapter 9.5 casually</p>
+                    <p>Omit pages 7,8,9 from chapter 9.6</p>
                   </div>
                   <div className='user-leftSection '>
                     <div className='user-leftSection-titleContainer'>
