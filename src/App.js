@@ -31,7 +31,7 @@ class App extends React.Component {
     {
       task: (
         <p>
-          Test #1 - 9.1,9.2,9.3,9.4,9.5,9.6 (
+          Test #1 - 9.1,9.2,9.3,9.4,9.6 (
           <a href='http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html'>
             Practice Tests
           </a>
@@ -231,9 +231,8 @@ class App extends React.Component {
                     <div className='user-leftSection-titleContainer'>
                       <h2 className='user-leftSection-title'>Updates</h2>
                     </div>
-                    <p>There is no 9.5 WAMAP assignment</p>
-                    <p>Watch the first 9.5 video</p>
-                    <p>Read chapter 9.5 casually</p>
+                    <p>Test #1 will be 65 minutes long and will be submitted the same way as quizzes. The test will include all previous lessons/chapters EXCEPT chapters 9.5 and 10.</p>
+                    <p>Good Luck! 🍀</p>
                     <p>Omit pages 7,8,9 from chapter 9.6</p>
                   </div>
                   <div className='user-leftSection '>
