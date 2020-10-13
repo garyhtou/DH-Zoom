@@ -231,9 +231,8 @@ class App extends React.Component {
                     <div className='user-leftSection-titleContainer'>
                       <h2 className='user-leftSection-title'>Updates</h2>
                     </div>
-                    <p>Test #1 will be 65 minutes long and you will submit it the same way you sumbit quizzes</p>
-                    <p>Test #1 will include all the previous lessons EXCEPT 9.5</p>
-                    <p>Test #1 will NOT include chapter 10</p>
+                    <p>Test #1 will be 65 minutes long and will be submitted the same way as quizzes. The test will include all previous lessons/chapters EXCEPT chapters 9.5 and 10.</p>
+                    <p>Good Luck! 🍀</p>
                     <p>Omit pages 7,8,9 from chapter 9.6</p>
                   </div>
                   <div className='user-leftSection '>
