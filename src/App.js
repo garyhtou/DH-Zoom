@@ -31,15 +31,28 @@ class App extends React.Component {
     {
       task: (
         <p>
+          Quiz #3 (
+          <a href='http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html'>
+            Practice Quizzes
+          </a>
+          )
+        </p>
+      ),
+      date: 1603322036,
+      dateOnly: true,
+    },
+    {
+      task: (
+        <p>
           Test #1 - 9.1,9.2,9.3,9.4,9.6 (
           <a href='http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html'>
             Practice Tests
           </a>
-		  )
+          )
         </p>
-	  ),
-	  date: 1602627311,
-	  dateOnly: true
+      ),
+      date: 1602627311,
+      dateOnly: true,
     },
     {
       task: 'WAMAP - 9.6 Properties of Conic Sections',
@@ -231,9 +244,25 @@ class App extends React.Component {
                     <div className='user-leftSection-titleContainer'>
                       <h2 className='user-leftSection-title'>Updates</h2>
                     </div>
-                    <p>Test #1 will be 65 minutes long and will be submitted the same way as quizzes. The test will include all previous lessons/chapters EXCEPT chapters 9.5 and 10.</p>
-                    <p>Good Luck! 🍀</p>
-                    <p>Omit pages 7,8,9 from chapter 9.6</p>
+                    <p>
+                      Thursday Oct. 15 is a regular class day (my Math 153
+                      calendar says “holiday.” That is wrong.
+                    </p>
+                    <p>
+                      Tuesday Oct. 20 is a BC Professional Develop day so no
+                      regular BC classes (= no quiz).
+                    </p>
+                    <p>
+                      Wednesday Oct. 21 is Quiz #3. It will contain material up
+                      to and including Friday’s class.
+                    </p>
+                    <p>
+                      Here is a link to Chapter 10 while the textbook is down on
+                      WAMAP
+                      <a href='https://drive.google.com/file/d/1J0qoGlGa9z6-8PUfcIH2fw7hTXcWktbZ/view?usp=sharing'>
+                        Chapter 10
+                      </a>
+                    </p>
                   </div>
                   <div className='user-leftSection '>
                     <div className='user-leftSection-titleContainer'>
