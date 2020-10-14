@@ -232,6 +232,15 @@ class App extends React.Component {
 											<h2 className="user-leftSection-title">Updates</h2>
 										</div>
 										<p>
+											No class on Tuesday, October 20th. Quiz #3 will be pushed
+											back to Wednesday, October 21st and will contain material
+											up to and including Friday's class (10/16).{" "}
+											<em>
+												There is class on October 15th dispite the class
+												calendar.
+											</em>
+										</p>
+										<p>
 											Since Dale Hoffman's website is down due to the wind, here
 											is a link to the{" "}
 											<Tooltip title="Thanks Haashim!">
