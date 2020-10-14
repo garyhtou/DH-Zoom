@@ -235,7 +235,11 @@ class App extends React.Component {
 											Since the Dale Hoffman's server is down due to the wind,
 											here is a link to{" "}
 											<Tooltip title="Thanks Haashim!">
-												<a href="https://drive.google.com/file/d/1J0qoGlGa9z6-8PUfcIH2fw7hTXcWktbZ/view">
+												<a
+													href="https://drive.google.com/file/d/1J0qoGlGa9z6-8PUfcIH2fw7hTXcWktbZ/view"
+													target="_blank"
+													rel="noopener noreferrer"
+												>
 													Chapter 10 PDF
 												</a>
 											</Tooltip>
