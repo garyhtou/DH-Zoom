@@ -29,11 +29,6 @@ class App extends React.Component {
   // dateOnly will not show the hours/minutes
   dates = [
     {
-      task: 'WAMAP - 10.1 Sequences',
-      date: 1602993600,
-      dateOnly: false,
-    },
-    {
       task: (
         <p>
           Quiz #3 (
@@ -45,6 +40,11 @@ class App extends React.Component {
       ),
       date: 1603322036,
       dateOnly: true,
+    },
+    {
+      task: 'WAMAP - 10.1 Sequences',
+      date: 1602993600,
+      dateOnly: false,
     },
     {
       task: (
