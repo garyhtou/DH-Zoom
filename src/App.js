@@ -25,79 +25,92 @@ class App extends React.Component {
 		};
 	}
 
-	// epoch time
-	// dateOnly will not show the hours/minutes
-	dates = [
-		{
-			task: (
-				<p>
-					Test #1 - 9.1,9.2,9.3,9.4,9.6 (
-					<a href="http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html">
-						Practice Tests
-					</a>
-					)
-				</p>
-			),
-			date: 1602627311,
-			dateOnly: true,
-		},
-		{
-			task: "WAMAP - 9.6 Properties of Conic Sections",
-			date: 1602388800,
-			dateOnly: false,
-		},
-		{
-			task: (
-				<p>
-					Quiz #2 - 9.3-9.4 (
-					<a href="http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html">
-						Practice Quizzes
-					</a>
-					)
-				</p>
-			),
-			date: 1601994600,
-			dateOnly: true,
-		},
-		{
-			task: "WAMAP - 9.4 Calculus and Parametric Equations",
-			date: 1601870400,
-			dateOnly: false,
-		},
-		{
-			task: "WAMAP - 9.3 Parametric Equations",
-			date: 1601611200,
-			dateOnly: false,
-		},
-		{
-			task: (
-				<p>
-					Quiz #1 - 9.1-9.2 (
-					<a href="http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html">
-						Practice Quizzes
-					</a>
-					)
-				</p>
-			),
-			date: 1601427600,
-			dateOnly: true,
-		},
-		{
-			task: "WAMAP - 9.2 Calculus with Polar Coordinates",
-			date: 1601168400,
-			dateOnly: false,
-		},
-		{
-			task: "WAMAP - 9.1 Polar Coordinates",
-			date: 1600909200,
-			dateOnly: false,
-		},
-		{
-			task: "Quarter Begins",
-			date: 1600736400,
-			dateOnly: true,
-		},
-	];
+  // epoch time
+  // dateOnly will not show the hours/minutes
+  dates = [
+    {
+      task: (
+        <p>
+          Quiz #3 (
+          <a href='http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html'>
+            Practice Quizzes
+          </a>
+          )
+        </p>
+      ),
+      date: 1603322036,
+      dateOnly: true,
+    },
+    {
+      task: (
+        <p>
+          Test #1 - 9.1,9.2,9.3,9.4,9.6 (
+          <a href='http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html'>
+            Practice Tests
+          </a>
+          )
+        </p>
+      ),
+      date: 1602627311,
+      dateOnly: true,
+    },
+    {
+      task: 'WAMAP - 9.6 Properties of Conic Sections',
+      date: 1602388800,
+      dateOnly: false,
+    },
+    {
+      task: (
+        <p>
+          Quiz #2 - 9.3-9.4 (
+          <a href='http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html'>
+            Practice Quizzes
+          </a>
+          )
+        </p>
+      ),
+      date: 1601994600,
+      dateOnly: true,
+    },
+    {
+      task: 'WAMAP - 9.4 Calculus and Parametric Equations',
+      date: 1601870400,
+      dateOnly: false,
+    },
+    {
+      task: 'WAMAP - 9.3 Parametric Equations',
+      date: 1601611200,
+      dateOnly: false,
+    },
+    {
+      task: (
+        <p>
+          Quiz #1 - 9.1-9.2 (
+          <a href='http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html'>
+            Practice Quizzes
+          </a>
+          )
+        </p>
+      ),
+      date: 1601427600,
+      dateOnly: true,
+    },
+    {
+      task: 'WAMAP - 9.2 Calculus with Polar Coordinates',
+      date: 1601168400,
+      dateOnly: false,
+    },
+    {
+      task: 'WAMAP - 9.1 Polar Coordinates',
+      date: 1600909200,
+      dateOnly: false,
+    },
+    {
+      task: 'Quarter Begins',
+      date: 1600736400,
+      dateOnly: true,
+    },
+  ];
 
 	randomEmojisList = [
 		"👋",
