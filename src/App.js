@@ -42,6 +42,11 @@ class App extends React.Component {
       dateOnly: true,
     },
     {
+      task: 'WAMAP - 10.1 Sequences',
+      date: 1602993600,
+      dateOnly: false,
+    },
+    {
       task: (
         <p>
           Test #1 - 9.1,9.2,9.3,9.4,9.6 (
@@ -266,10 +271,6 @@ class App extends React.Component {
 												</a>
 											</Tooltip>
 											.
-										</p>
-										<p>
-											WAMAP 10.1 will be due this weekend (either 10/17 or
-											10/18).
 										</p>
 									</div>
 									<div className="user-leftSection ">
