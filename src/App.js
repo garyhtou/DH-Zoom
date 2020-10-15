@@ -245,24 +245,32 @@ class App extends React.Component {
                       <h2 className='user-leftSection-title'>Updates</h2>
                     </div>
                     <p>
-                      Thursday Oct. 15 is a regular class day (my Math 153
-                      calendar says “holiday.” That is wrong.
-                    </p>
-                    <p>
-                      Tuesday Oct. 20 is a BC Professional Develop day so no
-                      regular BC classes (= no quiz).
-                    </p>
-                    <p>
-                      Wednesday Oct. 21 is Quiz #3. It will contain material up
-                      to and including Friday’s class.
-                    </p>
-                    <p>
-                      Here is a link to Chapter 10 while the textbook is down on
-                      WAMAP
-                      <a href='https://drive.google.com/file/d/1J0qoGlGa9z6-8PUfcIH2fw7hTXcWktbZ/view?usp=sharing'>
-                        Chapter 10
-                      </a>
-                    </p>
+											No class on Tuesday, October 20th. Quiz #3 will be pushed
+											back to Wednesday, October 21st and will contain material
+											up to and including Friday's class (10/16).{" "}
+											<em>
+												There is class on October 15th dispite the class
+												calendar.
+											</em>
+										</p>
+										<p>
+											Since Dale Hoffman's website is down due to the wind, here
+											is a link to the{" "}
+											<Tooltip title="Thanks Haashim!">
+												<a
+													href="https://drive.google.com/file/d/1J0qoGlGa9z6-8PUfcIH2fw7hTXcWktbZ/view"
+													target="_blank"
+													rel="noopener noreferrer"
+												>
+													Chapter 10 PDF
+												</a>
+											</Tooltip>
+											.
+										</p>
+										<p>
+											WAMAP 10.1 will be due this weekend (either 10/17 or
+											10/18).
+										</p>
                   </div>
                   <div className='user-leftSection '>
                     <div className='user-leftSection-titleContainer'>
