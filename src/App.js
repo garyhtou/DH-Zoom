@@ -36,7 +36,7 @@ class App extends React.Component {
     {
       task: (
         <p>
-          Quiz #3 (
+          Quiz #3 - 10.1 and some of 10.2 (
           <a href='http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html'>
             Practice Quizzes
           </a>
