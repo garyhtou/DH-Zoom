@@ -28,6 +28,11 @@ class App extends React.Component {
   // epoch time
   // dateOnly will not show the hours/minutes
   dates = [
+	{
+		task: 'WAMAP - 10.2 Infinite Series',
+		date: 1603252800,
+		dateOnly: false,
+	  },
     {
       task: (
         <p>
@@ -251,12 +256,7 @@ class App extends React.Component {
 										</div>
 										<p>
 											No class on Tuesday, October 20th. Quiz #3 will be pushed
-											back to Wednesday, October 21st and will contain material
-											up to and including Friday's class (10/16).{" "}
-											<em>
-												There is class on October 15th dispite the class
-												calendar.
-											</em>
+											back to Wednesday, and it will contain 10.1 and some of 10.2.
 										</p>
 										<p>
 											Since Dale Hoffman's website is down due to the wind, here
