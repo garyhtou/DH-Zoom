@@ -29,6 +29,11 @@ class App extends React.Component {
   // dateOnly will not show the hours/minutes
   dates = [
 	{
+		task: 'WAMAP - 10.3 Geometric and Harmonic Series',
+		date: 1603555200,
+		dateOnly: false,
+	  },
+	{
 		task: 'WAMAP - 10.2 Infinite Series',
 		date: 1603252800,
 		dateOnly: false,
@@ -255,12 +260,8 @@ class App extends React.Component {
 											<h2 className="user-leftSection-title">Updates</h2>
 										</div>
 										<p>
-											No class on Tuesday, October 20th. Quiz #3 will be pushed
-											back to Wednesday, and it will contain 10.1 and some of 10.2.
-										</p>
-										<p>
 											Since Dale Hoffman's website is down due to the wind, here
-											is a link to the{" "}
+											is a link to the
 											<Tooltip title="Thanks Haashim!">
 												<a
 													href="https://drive.google.com/file/d/1J0qoGlGa9z6-8PUfcIH2fw7hTXcWktbZ/view"
