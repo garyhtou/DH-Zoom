@@ -30,7 +30,7 @@ class App extends React.Component {
 	dates = [
 		{
 			task: "WAMAP - 10.3 Geometric and Harmonic Series",
-			date: 1603555200,
+			date: 1603598400,
 			dateOnly: false,
 		},
 		{
