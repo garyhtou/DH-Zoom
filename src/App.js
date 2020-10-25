@@ -273,8 +273,8 @@ class App extends React.Component {
 											<h2 className="user-leftSection-title">Updates</h2>
 										</div>
 										<p>Quiz #4 will include 10.3 and 10.3.5</p>
-										<p>There is no assignemnet for 10.3.5 but make sure to read through that section in the textbook</p>
-										<p>We will start 10.4 on Monday and that will NOT be on the quiz</p>
+										<p>There is no WAMAP for 10.3.5, but make sure to read through that chapter and do the homework in the textbook</p>
+										<p>We will start 10.4 on Monday, but it will NOT be on the quiz</p>
 										<p>
 											Since Dale Hoffman's website is down due to the wind, here
 											is a link to the
