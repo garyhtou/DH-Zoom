@@ -28,6 +28,19 @@ class App extends React.Component {
 	// epoch time
 	// dateOnly will not show the hours/minutes
 	dates = [
+    {
+		task: (
+		  <p>
+			Quiz #4 - 10.3 and 10.3.5 (
+			<a href='http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html'>
+			  Practice Quizzes
+			</a>
+			)
+		  </p>
+		),
+		date: 1603817172,
+		dateOnly: true,
+	  },
 		{
 			task: "WAMAP - 10.3 Geometric and Harmonic Series",
 			date: 1603598400,
@@ -259,6 +272,9 @@ class App extends React.Component {
 										<div className="user-leftSection-titleContainer">
 											<h2 className="user-leftSection-title">Updates</h2>
 										</div>
+										<p>Quiz #4 will include 10.3 and 10.3.5</p>
+										<p>There is no WAMAP for 10.3.5, but make sure to read through that chapter and do the homework in the textbook</p>
+										<p>We will start 10.4 on Monday, but it will NOT be on the quiz</p>
 										<p>
 											Since Dale Hoffman's website is down due to the wind, here
 											is a link to the{" "}
