@@ -28,6 +28,11 @@ class App extends React.Component {
 	// epoch time
 	// dateOnly will not show the hours/minutes
 	dates = [
+		{
+			task: "WAMAP - 10.4 Integral Test and p-test",
+			date: 1604030400,
+			dateOnly: false,
+		},
     {
 		task: (
 		  <p>
