@@ -245,83 +245,86 @@ class App extends React.Component {
       });
   }
 
-  render() {
-    return (
-      <Layout
-        style={{ minHeight: '100vh' }}
-        className={true ? 'dark-mode' : 'light-mode'}
-      >
-        <Content
-          style={{
-            padding: '2vw',
-            position: 'relative',
-          }}
-        >
-          {this.state.home ? (
-            <div className='user-container'>
-              <h1 className='user-welcome'>
-                Math 153 Zoom Links!
-                <span
-                  className='user-welcomeEmoji'
-                  role='img'
-                  aria-label='emoji'
-                  style={{ cursor: 'default', userSelect: 'none' }}
-                  onClick={function () {
-                    this.setState({
-                      randomEmoji: this.randomEmoji(),
-                    });
-                  }.bind(this)}
-                >
-                  {this.state.randomEmoji}
-                </span>
-              </h1>
-              <h3>Dale Hoffman, Fall 2020</h3>
-              <div className='user-flex'>
-                <div className='user-flexSide user-flexLeft'>
-                  <div className='user-leftSection '>
-                    <div className='user-leftSection-titleContainer'>
-                      <h2 className='user-leftSection-title'>Updates</h2>
-                    </div>
-                    <p>
-                   Test #2 will be on Tuesday and cover material all the way through Friday
-                    </p>
-					<p>
-                   WAMAP 10.6 will most likely be due on Sunday evening
-                    </p>
-                    <p>
-                      Since Dale Hoffman's website is down due to the wind, here
-                      is a link to the{' '}
-                      <Tooltip title='Thanks Haashim!'>
-                        <a
-                          href='https://drive.google.com/file/d/1J0qoGlGa9z6-8PUfcIH2fw7hTXcWktbZ/view'
-                          target='_blank'
-                          rel='noopener noreferrer'
-                        >
-                          Chapter 10 PDF
-                        </a>
-                      </Tooltip>
-                      .
-                    </p>
-                  </div>
-                  <div className='user-leftSection '>
-                    <div className='user-leftSection-titleContainer'>
-                      <h2 className='user-leftSection-title'>
-                        Important Dates
-                      </h2>
-                    </div>
-                    {function () {
-                      const columns = [
-                        {
-                          title: 'Task',
-                          dataIndex: 'task',
-                          key: 'task',
-                        },
-                        {
-                          title: 'Date',
-                          dataIndex: 'date',
-                          key: 'date',
-                        },
-                      ];
+	render() {
+		return (
+			<Layout
+				style={{ minHeight: "100vh" }}
+				className={true ? "dark-mode" : "light-mode"}
+			>
+				<Content
+					style={{
+						padding: "2vw",
+						position: "relative",
+					}}
+				>
+					{this.state.home ? (
+						<div className="user-container">
+							<h1 className="user-welcome">
+								Math 153 Zoom Links!
+								<span
+									className="user-welcomeEmoji"
+									role="img"
+									aria-label="emoji"
+									style={{ cursor: "default", userSelect: "none" }}
+									onClick={function () {
+										this.setState({
+											randomEmoji: this.randomEmoji(),
+										});
+									}.bind(this)}
+								>
+									{this.state.randomEmoji}
+								</span>
+							</h1>
+							<h3>Dale Hoffman, Fall 2020</h3>
+							<div className="user-flex">
+								<div className="user-flexSide user-flexLeft">
+									<div className="user-leftSection ">
+										<div className="user-leftSection-titleContainer">
+											<h2 className="user-leftSection-title">Updates</h2>
+										</div>
+										<p>Quiz #4 will include 10.3 and 10.3.5</p>
+										<p>
+											There is no WAMAP for 10.3.5, but make sure to read
+											through that chapter and do the homework in the textbook
+										</p>
+										<p>
+											We will start 10.4 on Monday, but it will NOT be on the
+											quiz
+										</p>
+										<p>
+											Since Dale Hoffman's website is down due to the wind, here
+											is a link to the{" "}
+											<Tooltip title="Thanks Haashim!">
+												<a
+													href="https://drive.google.com/file/d/1J0qoGlGa9z6-8PUfcIH2fw7hTXcWktbZ/view"
+													target="_blank"
+													rel="noopener noreferrer"
+												>
+													Chapter 10 PDF
+												</a>
+											</Tooltip>
+											.
+										</p>
+									</div>
+									<div className="user-leftSection ">
+										<div className="user-leftSection-titleContainer">
+											<h2 className="user-leftSection-title">
+												Important Dates
+											</h2>
+										</div>
+										{function () {
+											const columns = [
+												{
+													title: "Task",
+													dataIndex: "task",
+													key: "task",
+												},
+												{
+													title: "Date",
+													dataIndex: "date",
+													key: "date",
+												},
+											];
 
                       const data = [];
                       for (let item of this.dates) {
