@@ -3,13 +3,13 @@ import { Tooltip } from "antd";
 
 const updates = (
 	<>
+		<p>Test #2 will be on Tuesday and cover material 10.1 through 10.6</p>
 		<p>
-			Test #2 will be on Tuesday and cover material all the way through Friday
+			Monday will be review. If there is any material convered on Monday, it
+			will not be on the test.
 		</p>
-		<p>WAMAP 10.6 will most likely be due on Sunday evening</p>
 		<p>
-			Since Dale Hoffman's website is down due to the wind, here is a link to
-			the{" "}
+			Link to{" "}
 			<Tooltip title="Thanks Haashim!">
 				<a
 					href="https://drive.google.com/file/d/1J0qoGlGa9z6-8PUfcIH2fw7hTXcWktbZ/view"
@@ -18,8 +18,8 @@ const updates = (
 				>
 					Chapter 10 PDF
 				</a>
+				.
 			</Tooltip>
-			.
 		</p>
 	</>
 );
@@ -27,6 +27,24 @@ const updates = (
 // epoch time
 // dateOnly will not show the hours/minutes
 const dates = [
+	{
+		task: (
+			<p>
+				Test #2 - 10.1-10.6 (
+				<a href="http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html">
+					Practice Tests
+				</a>
+				)
+			</p>
+		),
+		date: 1604417400,
+		dateOnly: true,
+	},
+	{
+		task: "WAMAP - 10.6 Alternating Sign Series",
+		date: 1604293200,
+		dateOnly: false,
+	},
 	{
 		task: "WAMAP - 10.5 Comparison Tests",
 		date: 1604203200,
