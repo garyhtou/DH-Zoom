@@ -3,10 +3,13 @@ import { Tooltip } from "antd";
 
 const updates = (
 	<>
-		<p>Test #2 will be on Tuesday and cover material 10.1 through 10.6</p>
 		<p>
-			Monday will be review. If there is any material convered on Monday, it
-			will not be on the test.
+			Test #2 will be 100 points and take place on Tuesday with material from
+			10.1 through 10.6
+		</p>
+		<p>
+			Monday was review. Any material convered on Monday, will not be on the
+			test.
 		</p>
 		<p>
 			Link to{" "}
