@@ -3,13 +3,11 @@ import { Tooltip } from "antd";
 
 const updates = (
 	<>
+		<p>No class or office hours on Wednesday (10/4/2020).</p>
 		<p>
-			Test #2 will be 100 points and take place on Tuesday with material from
-			10.1 through 10.6
-		</p>
-		<p>
-			Monday was review. Any material convered on Monday, will not be on the
-			test.
+			We will resume as usual on Thursday. Use tomorrow to look over and
+			understand what you got wrong on the test. And begin reading section 10.7
+			on Absolute Convergence and the Ratio Test.
 		</p>
 		<p>
 			Link to{" "}
