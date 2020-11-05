@@ -29,6 +29,11 @@ class App extends React.Component {
   // dateOnly will not show the hours/minutes
   dates = [
     {
+      task: 'WAMAP - 10.7 Absolute Convergence and the Ratio Test',
+      date: 1604811600,
+      dateOnly: false,
+    },
+    {
       task: 'WAMAP - 10.5 Comparison Tests',
       date: 1604203200,
       dateOnly: false,
@@ -282,15 +287,6 @@ class App extends React.Component {
 										<div className="user-leftSection-titleContainer">
 											<h2 className="user-leftSection-title">Updates</h2>
 										</div>
-										<p>Quiz #4 will include 10.3 and 10.3.5</p>
-										<p>
-											There is no WAMAP for 10.3.5, but make sure to read
-											through that chapter and do the homework in the textbook
-										</p>
-										<p>
-											We will start 10.4 on Monday, but it will NOT be on the
-											quiz
-										</p>
 										<p>
 											Since Dale Hoffman's website is down due to the wind, here
 											is a link to the{" "}
