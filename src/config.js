@@ -3,12 +3,6 @@ import { Tooltip } from "antd";
 
 const updates = (
 	<>
-		<p>No class or office hours on Wednesday (10/4/2020).</p>
-		<p>
-			We will resume as usual on Thursday. Use tomorrow to look over and
-			understand what you got wrong on the test. And begin reading section 10.7
-			on Absolute Convergence and the Ratio Test.
-		</p>
 		<p>
 			Link to{" "}
 			<Tooltip title="Thanks Haashim!">
@@ -29,7 +23,7 @@ const updates = (
 // dateOnly will not show the hours/minutes
 const dates = [
 	{
-		task: 'WAMAP - 10.7 Absolute Convergence and the Ratio Test',
+		task: "WAMAP - 10.7 Absolute Convergence and the Ratio Test",
 		date: 1604811600,
 		dateOnly: false,
 	},
