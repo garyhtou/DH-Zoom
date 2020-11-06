@@ -29,6 +29,11 @@ const updates = (
 // dateOnly will not show the hours/minutes
 const dates = [
 	{
+		task: 'WAMAP - 10.7 Absolute Convergence and the Ratio Test',
+		date: 1604811600,
+		dateOnly: false,
+	},
+	{
 		task: (
 			<p>
 				Test #2 - 10.1-10.6 (
