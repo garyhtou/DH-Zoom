@@ -23,6 +23,19 @@ const updates = (
 // dateOnly will not show the hours/minutes
 const dates = [
 	{
+		task: (
+			<p>
+				Quiz #5 - 10.7 (
+				<a href="http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html">
+					Practice Quizzes
+				</a>
+				)
+			</p>
+		),
+		date: 1605022200,
+		dateOnly: true,
+	},
+	{
 		task: "WAMAP - 10.7 Absolute Convergence and the Ratio Test",
 		date: 1604811600,
 		dateOnly: false,
