@@ -3,6 +3,9 @@ import { Tooltip } from "antd";
 
 const updates = (
 	<>
+	<p>
+		No class Wednesday Nov 11th. Veterans Day. Class will resume back on Thursday. 
+	</p>
 		<p>
 			Link to{" "}
 			<Tooltip title="Thanks Haashim!">
