@@ -26,6 +26,11 @@ const updates = (
 // dateOnly will not show the hours/minutes
 const dates = [
 	{
+		task: "WAMAP - 10.8 Power Series",
+		date: 1605330000,
+		dateOnly: false,
+	},
+	{
 		task: (
 			<p>
 				Quiz #5 - 10.7 (
