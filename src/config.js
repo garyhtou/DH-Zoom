@@ -4,7 +4,10 @@ import { Tooltip } from "antd";
 const updates = (
 	<>
 	<p>
-		No class Wednesday Nov 11th. Veterans Day. Class will resume back on Thursday. 
+		Quiz #6 will be on Wednesday
+	</p>
+	<p>
+		There is no 10.10 WAMAP Assignemnt 
 	</p>
 		<p>
 			Link to{" "}
@@ -25,6 +28,11 @@ const updates = (
 // epoch time
 // dateOnly will not show the hours/minutes
 const dates = [
+	{
+		task: "WAMAP - 10.9 Representing Functions with Power Series",
+		date: 1605502800,
+		dateOnly: false,
+	},
 	{
 		task: "WAMAP - 10.8 Power Series",
 		date: 1605330000,
