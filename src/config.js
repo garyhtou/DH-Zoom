@@ -3,12 +3,8 @@ import { Tooltip } from "antd";
 
 const updates = (
 	<>
-	<p>
-		Quiz #6 will be on Wednesday
-	</p>
-	<p>
-		There is no 10.10 WAMAP Assignemnt 
-	</p>
+		<p>Quiz #6 will be on Wednesday</p>
+		<p>There is no 10.10 WAMAP Assignemnt</p>
 		<p>
 			Link to{" "}
 			<Tooltip title="Thanks Haashim!">
@@ -28,6 +24,19 @@ const updates = (
 // epoch time
 // dateOnly will not show the hours/minutes
 const dates = [
+	{
+		task: (
+			<p>
+				Quiz #5 - 10.8 to 10.10 (
+				<a href="http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html">
+					Practice Quizzes
+				</a>
+				)
+			</p>
+		),
+		date: 1605713400,
+		dateOnly: true,
+	},
 	{
 		task: "WAMAP - 10.9 Representing Functions with Power Series",
 		date: 1605502800,
