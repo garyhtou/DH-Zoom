@@ -3,8 +3,7 @@ import { Tooltip } from "antd";
 
 const updates = (
 	<>
-		<p>Quiz #6 will be on Wednesday</p>
-		<p>There is no 10.10 WAMAP Assignemnt</p>
+		<p>Test #3 is moved to Wednesday, Dec. 2</p>
 		<p>
 			Link to{" "}
 			<Tooltip title="Thanks Haashim!">
@@ -68,7 +67,7 @@ const dates = [
 	{
 		task: (
 			<p>
-				Test #2 - 10.1-10.6 (
+				Test #2 - 10.1 to 10.6 (
 				<a href="http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html">
 					Practice Tests
 				</a>
@@ -137,7 +136,7 @@ const dates = [
 	{
 		task: (
 			<p>
-				Test #1 - 9.1,9.2,9.3,9.4,9.6 (
+				Test #1 - 9.1, 9.2, 9.3, 9.4, 9.6 (
 				<a href="http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html">
 					Practice Tests
 				</a>
@@ -155,7 +154,7 @@ const dates = [
 	{
 		task: (
 			<p>
-				Quiz #2 - 9.3-9.4 (
+				Quiz #2 - 9.3 and 9.4 (
 				<a href="http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html">
 					Practice Quizzes
 				</a>
@@ -178,7 +177,7 @@ const dates = [
 	{
 		task: (
 			<p>
-				Quiz #1 - 9.1-9.2 (
+				Quiz #1 - 9.1 and 9.2 (
 				<a href="http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html">
 					Practice Quizzes
 				</a>
