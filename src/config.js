@@ -4,10 +4,7 @@ import { Tooltip } from "antd";
 const updates = (
 	<>
 	<p>
-		Quiz #6 will be on Wednesday
-	</p>
-	<p>
-		There is no 10.10 WAMAP Assignemnt 
+		Test #3 is moved to Wednesday Dec. 2 
 	</p>
 		<p>
 			Link to{" "}
