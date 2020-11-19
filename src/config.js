@@ -3,10 +3,10 @@ import { Tooltip } from "antd";
 
 const updates = (
 	<>
-	<p>
-		Test #3 is moved to Wednesday Dec. 2 
-	</p>
-		<p>
+	  <p>
+		  Test #3 is moved to Wednesday Dec. 2 
+		</p>
+    <p>
 			Link to{" "}
 			<Tooltip title="Thanks Haashim!">
 				<a
@@ -25,6 +25,19 @@ const updates = (
 // epoch time
 // dateOnly will not show the hours/minutes
 const dates = [
+	{
+		task: (
+			<p>
+				Quiz #5 - 10.8 to 10.10 (
+				<a href="http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html">
+					Practice Quizzes
+				</a>
+				)
+			</p>
+		),
+		date: 1605713400,
+		dateOnly: true,
+	},
 	{
 		task: "WAMAP - 10.9 Representing Functions with Power Series",
 		date: 1605502800,
@@ -56,7 +69,7 @@ const dates = [
 	{
 		task: (
 			<p>
-				Test #2 - 10.1-10.6 (
+				Test #2 - 10.1 to 10.6 (
 				<a href="http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html">
 					Practice Tests
 				</a>
@@ -125,7 +138,7 @@ const dates = [
 	{
 		task: (
 			<p>
-				Test #1 - 9.1,9.2,9.3,9.4,9.6 (
+				Test #1 - 9.1, 9.2, 9.3, 9.4, 9.6 (
 				<a href="http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html">
 					Practice Tests
 				</a>
@@ -143,7 +156,7 @@ const dates = [
 	{
 		task: (
 			<p>
-				Quiz #2 - 9.3-9.4 (
+				Quiz #2 - 9.3 and 9.4 (
 				<a href="http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html">
 					Practice Quizzes
 				</a>
@@ -166,7 +179,7 @@ const dates = [
 	{
 		task: (
 			<p>
-				Quiz #1 - 9.1-9.2 (
+				Quiz #1 - 9.1 and 9.2 (
 				<a href="http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html">
 					Practice Quizzes
 				</a>
