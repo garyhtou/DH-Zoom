@@ -4,15 +4,14 @@ import { Tooltip } from "antd";
 const updates = (
 	<>
 	<p>
-	11.1, 11.2, and 11.3 have no WAMAP points, but are very helpful practices
+	Omit section 10.11
 	</p>
 	<p>
 	We don't need to know much from 10.12 (we don't need to know the formulas, just understand the concept)
 	</p>
 	<p>
-	omit section 10.11
-	</p>
-	  <p>
+	11.1, 11.2, and 11.3 have no WAMAP points, but are very helpful practices
+	</p>	  <p>
 		  Test #3 is moved to Wednesday Dec. 2 
 		</p>
     <p>
