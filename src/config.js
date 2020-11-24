@@ -3,30 +3,15 @@ import { Tooltip } from "antd";
 
 const updates = (
 	<>
-	<p>
-	Omit section 10.11
-	</p>
-	<p>
-	We don't need to know much from 10.12 (we don't need to know the formulas, just understand the concept)
-	</p>
-	<p>
-	11.1, 11.2, and 11.3 have no WAMAP points, but are very helpful practices
-	</p>	  <p>
-		  Test #3 is moved to Wednesday Dec. 2 
+		<p>No school on Thursday and Friday - Happy Thanksgiving!</p>
+		<p>
+			Omit section 10.11. We don't need to know much from 10.12 (we don't need
+			to know the formulas, just understand the concept).
 		</p>
-    <p>
-			Link to{" "}
-			<Tooltip title="Thanks Haashim!">
-				<a
-					href="https://drive.google.com/file/d/1J0qoGlGa9z6-8PUfcIH2fw7hTXcWktbZ/view"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Chapter 10 PDF
-				</a>
-				.
-			</Tooltip>
+		<p>
+			11.1, 11.2, and 11.3 have no WAMAP points, but are very helpful practices
 		</p>
+		<p>Test #3 is moved to Wednesday Dec. 2</p>
 	</>
 );
 
