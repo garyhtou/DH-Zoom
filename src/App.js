@@ -25,7 +25,7 @@ class App extends React.Component {
 			loading: true,
 		};
 	}
-  
+
 	randomEmojisList = [
 		"👋",
 		"😆",
@@ -50,9 +50,12 @@ class App extends React.Component {
 		"🌋",
 	];
 	randomEmoji = function () {
-		return this.randomEmojisList[
-			Math.floor(Math.random() * this.randomEmojisList.length)
-		];
+		// override for Thanksgiving
+		return "🦃";
+
+		// return this.randomEmojisList[
+		// 	Math.floor(Math.random() * this.randomEmojisList.length)
+		// ];
 	};
 
 	componentDidMount() {
