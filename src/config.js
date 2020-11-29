@@ -3,7 +3,6 @@ import { Tooltip } from "antd";
 
 const updates = (
 	<>
-		<p>No school on Thursday and Friday - Happy Thanksgiving!</p>
 		<p>
 			Omit section 10.11. We don't need to know much from 10.12 (we don't need
 			to know the formulas, just understand the concept).
