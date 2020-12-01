@@ -14,7 +14,7 @@ const dates = [
 	{
 		task: (
 		  <p>
-			Test #3 - 10.7 - 11.4 Omit 10.11 (
+			Test #3 - 10.7 to 11.4, omit 10.11 (
 			<a href='http://scidiv.bellevuecollege.edu/dh/math153/math153tests.html'>
 			  Practice Tests
 			</a>
