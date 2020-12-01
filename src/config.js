@@ -3,21 +3,8 @@ import { Tooltip } from 'antd';
 
 const updates = (
   <>
-    <p>Test will be from 10.7 to 11.4 but omit 10.11</p>
     <p>Test #3 is moved to Wednesday Dec. 2</p>
-    <p>
-      Link to{' '}
-      <Tooltip title='Thanks Haashim!'>
-        <a
-          href='https://drive.google.com/file/d/1J0qoGlGa9z6-8PUfcIH2fw7hTXcWktbZ/view'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Chapter 10 PDF
-        </a>
-        .
-      </Tooltip>
-    </p>
+    <p>Test will be from 10.7 to 11.4 but omit 10.11</p>
   </>
 );
 

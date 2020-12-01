@@ -25,7 +25,7 @@ class App extends React.Component {
 			loading: true,
 		};
 	}
-  
+
 	randomEmojisList = [
 		"👋",
 		"😆",
