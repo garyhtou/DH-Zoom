@@ -391,11 +391,11 @@ class App extends React.Component {
 					)}
 				</Content>
 				<Footer style={{ textAlign: "center" }}>
-					<p style={{ marginBottom: "2px" }}>
+					{/* <p style={{ marginBottom: "2px" }}>
 						<em>
 							There may be bugs. I'm not responsible if you're late to class :)
 						</em>
-					</p>
+					</p> */}
 					<div>
 						<a
 							className="gh-link"
@@ -417,6 +417,12 @@ class App extends React.Component {
 							Gary Tou
 						</a>
 					</div>
+					<p style={{ marginBottom: "2px" }}>
+						<em>
+							Special thanks to Kalid and Danny for maintaining this website
+							over the quarter.
+						</em>
+					</p>
 				</Footer>
 			</Layout>
 		);
