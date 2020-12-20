@@ -399,7 +399,7 @@ class App extends React.Component {
 					<div>
 						<a
 							className="gh-link"
-							href="https://github.com/garytou2/DH-Zoom"
+							href="https://github.com/garyhtou/DH-Zoom"
 							onClick={function () {
 								firebase.analytics().logEvent("visit_github_repo");
 							}}

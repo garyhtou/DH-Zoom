@@ -2,7 +2,7 @@
 	"name": "dh-zoom",
 	"version": "0.1.0",
 	"private": true,
-	"author": "Gary Tou <garytou2@gmail.com> (https://garytou2.com)",
+	"author": "Gary Tou <gary@garytou.com> (https://garytou.com)",
 	"license": "MIT",
 	"dependencies": {
 		"@testing-library/jest-dom": "^4.2.4",
